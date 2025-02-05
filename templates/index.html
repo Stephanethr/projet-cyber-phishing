@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://portailweb.universita.corsica/template/fontawesome/css/all.css"
+        media="screen" />
+    <link rel="shortcut icon"
+        href="https://portailweb.universita.corsica/template/template_back_office/images/favicon.ico"
+        type="image/x-icon">
+    <meta name="author" lang="fr" content="Service Communication">
+    <title>Campus num&eacute;rique | Universit&agrave; di Corsica Pasquale Paoli - Universit&eacute; de Corse Pasquale
+        Paoli</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://portailweb.universita.corsica/template/template_back_office/js/jquery-ui.css" />
+    <script type="text/javascript">
+        //$("#load").hide();
+        function optionCheck() {
+            //$("#load").show();
+            var id_site = document.getElementById("site").value;
+            window.location = "https://portailweb.universita.corsica/outils_de_ce_site.php?id_site=" + id_site;
+            //$("#load").hide();	
+
+        }	
+    </script>
+
+
+
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://portailweb.universita.corsica/template/template_back_office/css/style.php" media="screen" />
+    <script>  FontAwesomeConfig = { searchPseudoElements: true }; </script>
+    <script type="text/javascript"
+        src="https://portailweb.universita.corsica/template/template_back_office/js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="https://portailweb.universita.corsica/js/jquery.nyroModal.custom.js"></script>
+    <script type="text/javascript"
+        src="https://portailweb.universita.corsica/template/template_back_office/js/jquery-scrollbar.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.nyroModal').nyroModal();
+        });
+    </script>
+    <script type="text/javascript"
+        src="https://portailweb.universita.corsica/template/template_back_office/js/jquery-ui.min.js"></script>
+
+
+
+
+
+
+
+</head>
+
+
+<body>
+    <header role="banner">
+        <div class="search_form" style="height: 0px;">
+            <div class="container">
+                <form role="search" action="" class="" method="post">
+                    <i class="far fa-search"></i>
+                    <label><input type="text" placeholder="Rechercher sur ce site" title="Rechercher sur ce site"
+                            name="s" class="qode_search_field" autocomplete="off" /><span
+                            class="visually-hidden">Rechercher sur ce site</span></label>
+                    <input type="submit" value="Rechercher" />
+
+
+                </form>
+            </div>
+        </div>
+
+        <div class="top_header">
+            <div class="container">
+                <div class="pull-left">
+                    <div class="menu_top_header">
+                        <span><a href="https://www.universita.corsica" class="hidden_md">Università di corsica</a><span
+                                class="hidden_md">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><label
+                                for="nosportails_menu" class="nosportails">Nos Portails &nbsp;&nbsp;:</label></span>
+                        <input type="checkbox" id="nosportails_menu" />
+                        <ul class="animated slideInDown">
+                            <span class="vitrinemobile">
+                                <li><a href="https://www.universita.corsica">Site institutionnel</a></li>
+                            </span>
+                            <li><a href="https://studia.universita.corsica">Étudiants</a></li>
+                            <li><a href="https://portailweb.universita.corsica">Personnels</a></li>
+                            <li><a href="https://ricerca.universita.corsica">Recherche</a></li>
+                            <li><a href="https://pro.universita.corsica">Partenaires pro</a></li>
+                            <li><a href="https://fundazione.universita.corsica">Fondation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pull-right">
+                    <!--<div class="pull-left">
+					<a href="#" class="btn_search" id="btn_search"><i class="fa fa-search fa-1x" title="Recherche"></i><span class="visually-hidden">Rechercher sur ce site</span></a>
+                    	&nbsp;
+                    </div>-->
+                    <div class="menu_connexion_menu">
+                        <input type="checkbox" id="connexion_menu" />
+                        <ul class="animated slideInDown connexion_visible">
+                            <li><a href="https://portailweb.universita.corsica/index.php">Mes outils&nbsp;&nbsp;<i
+                                        class="fa fa-cubes fa-1x"></i></a></li>
+                            <li><a
+                                    href="https://applisweb.universita.corsica/portail/tous_mes_outils/settings.php?id_site=0&acces=portail&profil=admin">Mon
+                                    compte&nbsp;&nbsp;<i class="fal fa-cog fa-1x"></i></a></li>
+                            <li><a
+                                    href="https://portailweb.universita.corsica/plugins/auth/logout.php?username=braaac21&id_site=0">Se
+                                    déconnecter&nbsp;&nbsp;<i class="fa fa-sign-out fa-1x"></i></a></li>
+
+                        </ul>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_header">
+
+            <div class="container">
+
+                <a href="https://portailweb.universita.corsica/" class="logo"><img
+                        src="https://portailweb.universita.corsica/template/template_back_office/images/logo.png"
+                        alt="logo"></a>
+                <style type="text/css">
+                    header .bottom_header .baseline {
+                        font-size: 3em;
+                    }
+
+                    @media only screen and (max-width: 620px) {
+                        header .bottom_header .baseline {
+                            font-size: 1.5em;
+                        }
+                    }
+                </style>
+
+                <div class="baseline">
+
+                    &nbsp;|&nbsp;<span>Campus Numérique</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation ">
+            <link rel="stylesheet" type="text/css"
+                href="https://portailweb.universita.corsica/template/template_back_office/css/fontawesome.min.css"
+                media="screen" />
+            <nav class="container">
+                <input type="checkbox" id="input_menu_toggle">
+                <label for="input_menu_toggle" class="btn_menu_smart show_md"><i class="fa fa-bars"></i><span
+                        class="visually-hidden">Menu</span></label>
+
+            </nav>
+
+
+        </div>
+        <div id="progress-bar"></div>
+    </header>
+    <!-- <div id="load"></div>-->
+
+
+
+
+    <style>
+        /* The actual popup (appears on top) */
+        .popuptext {
+            display: none;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 9;
+        }
+
+        /* Popup arrow */
+        .popuptext::before {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #555 transparent;
+        }
+
+        /* Toggle this class when clicking on the popup container (hide and show the popup) */
+
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.clickme').on('click', function (e) {
+                $('.popuptext').css('display', 'block');
+                $('.popuptext').offset({ top: e.pageY + 40, left: e.pageX - 70 }).fadeIn();
+            });
+            $('.hideme').on('click', function (e) {
+                $('.popuptext').css('display', 'none');
+            });
+            var parents = document.querySelectorAll('.tousmesoutils_appli');
+            parents.forEach(function (item) {
+                if (isOverflown(item)) {
+                    item.classList.add("enq");
+                }
+            });
+
+        });
+    </script>
+    <div class="container_main_auto">
+        <div class="container_main">
+
+
+
+
+            <div id="pluginbomenu">
+                <br>
+                <div class="mes_outils">
+                    <div class="outils">
+                        <div class="vc_text_separator full ">
+                            <div class="separator_wrapper">
+                                <div class="separator_content">
+                                    <span class="tousmesoutils_titresection">Salute</span>
+                                </div>
+                            </div>
+                            <div class="separator_line"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container_main_auto" style="background-color:#F4F4F4">
+                <div class="container_main" style="background-color:#F4F4F4">
+                    <div class="tousmesoutils_section" style="background-color:#fff">
+                        <p class="tousmesoutils_titresection">Remplissez le formulaire d'exemption</p>
+                        <div class="justify-content-center  flex-column mdc-card mdc-card-content card flex-grow-1"
+                        style="padding: 20px">
+                           <div id="etu_pers_vacataires"></div>  
+                           <div class="d-flex flex-column justify-content-between m-auto">
+               
+                       <div>
+                           <!--  <div class="service-ui" th:replace="~{fragments/serviceui :: serviceUI}">
+                               <a href="fragments/serviceui.html">service ui fragment</a>
+                           </div>--></div>
+               
+                       <div class="form-wrapper">
+               
+                           <form method="post" id="fm1" action="login">
+                               <div id="login-form-controls">
+                                   <!--<h3 th:unless="${existingSingleSignOnSessionAvailable}" class="text-center">
+                                       <i class="mdi mdi-security fas fa-shield-alt"></i>
+                                       <span th:utext="#{screen.welcome.instructions}">Enter your Username and Password:</span>
+                                   </h3>--><section class="cas-field form-group my-3" id="usernameSection">
+                                       <label for="username"
+                                              class="mdc-text-field mdc-text-field--outlined control-label w-100 ">
+                                           <span class="mdc-notched-outline">
+                                               <span class="mdc-notched-outline__leading"></span>
+                                               <span class="mdc-notched-outline__notch">
+                                                   <!-- <span class="mdc-floating-label"
+                                                         th:utext="#{screen.welcome.label.netid}">Username</span> --><span class="mdc-floating-label  mdc-floating-label--float-above"
+                                                         style="background-color:#ffffff"><span class="accesskey">I</span>dentifiant :</span>
+                                               </span>
+                                               <span class="mdc-notched-outline__trailing"></span>
+                                           </span>
+                                           <input class="mdc-text-field__input form-control" id="username"
+                                                  size="25"
+                                                  type="text"
+                                                  accesskey="i"
+                                                  autocapitalize="none"
+                                                  spellcheck="false"
+                                                  autocomplete="username" required name="username" value=""/><div class="mdc-text-field-helper-line invalid-feedback">
+                                               <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                                                   <span id="usernameValidationMessage">Vous devez entrer votre identifiant.</span>
+                                               </div>
+                                           </div>
+                                       </label>
+               
+                                       
+               
+                                       <script type="text/javascript">
+                                           /*<![CDATA[*/
+                                           let username = "";
+                                           let disabled = false;
+               
+                                           if (username != null && username !== '') {
+                                               $('#username').val(username);
+                                               if (disabled) {
+                                                   $('#usernameSection').hide();
+                                               }
+                                           }
+                                           /*]]>*/
+                                       </script>
+                                   </section>
+                                   <section class="cas-field form-group my-3 mdc-input-group form-group" id="passwordSection">
+                                       <div class="mdc-input-group-field mdc-input-group-field-append">
+                                           <div class="d-flex caps-check">
+                                               <label for="password"
+                                                      class="mdc-text-field caps-check mdc-text-field--outlined control-label mdc-text-field--with-trailing-icon control-label w-100">
+                                                   <span class="mdc-notched-outline">
+                                                       <span class="mdc-notched-outline__leading"></span>
+                                                       <span class="mdc-notched-outline__notch">
+                                                           <!-- <span class="mdc-floating-label" th:utext="#{screen.welcome.label.password}">Password</span> --><span class="mdc-floating-label   mdc-floating-label--float-above" style="background-color:#ffffff"><span class="accesskey">M</span>ot de passe :</span>
+                                                       </span>
+                                                       <span class="mdc-notched-outline__trailing"></span>
+                                                   </span>
+                                                   <input class="mdc-text-field__input form-control pwd"
+                                                          type="password"
+                                                          id="password"
+                                                          size="25"
+                                                          required
+                                                          accesskey="m"
+                                                          autocomplete="off" name="password" value=""/><div class="mdc-text-field-helper-line invalid-feedback">
+                                                       <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
+                                                           <span id="passwordValidationMessage">Vous devez entrer votre mot de passe.</span>
+                                                       </div>
+                                                   </div>
+                                               </label>
+                                               <button
+                                                   class="reveal-password  mdc-input-group-append  bouton"
+                                                   tabindex="-1" type="button">
+                                                   <i class="mdi mdi-eye reveal-password-icon fas fa-eye"></i>
+                                                  <!-- <span class="visually-hidden">Toggle Password</span>--></button>
+                                           </div>
+                                           
+                                           <div class="mdc-text-field-helper-line caps-warn">
+                                               <div
+                                                   class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg text-danger">
+                                                   <span >La touche Verr. Maj. est activée !</span>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </section>
+               
+                                   <section class="cas-field form-group my-3">
+                                       </section>
+                                   
+                                   <section class="cas-field">
+               
+                                       <input type="hidden" name="execution" value="017655b4-c9cc-4571-91de-117284f43091_ZXlKaGJHY2lPaUpJVXpVeE1pSXNJblI1Y0NJNklrcFhWQ0lzSW10cFpDSTZJamhqT1RreVl6QmxMVFkxWVdZdE5EUTJNaTFoTkRsaUxXVXhZMkl5TkRabU1UVTRaQ0o5LmNMNjhzX3JrTGU5VmVRTzBVUGFoZFQyRkxab2pRLWwwTnJncWtfSHBybVZlSzhWeWlXUDJicjY1aE5VWXBmV2syMndRc1hpaFVGNU41RWZlNjBGYVdYeTFnR3plRUNuSjdMbXhIMUpPN290VnpWRzVNaWpIb1d6Vk1xbkE3b3NzMmd2MkUtZGppR2xFVl80dzVFZlJQNzlBUGV2cksyeTdmNE5tazZTQkV6N3BoU2t1elluMnhhbFpOY0wzWVBVUklTT3lwaFF2dXZEZjQ4Q2RsTnpOS1RIUnc4eWlzSlc4ZEx2MnBQajJ5VldYQkFDTVhNV3hBd0cyX3BTdFlhTGtTSFBMam9DaW1jRkEwNFlIeUtpczRGRV9jNnlfV2J0bUh1dkN0QW9sRUp3MzdZMUNrcWpfRUFDa3pDX2tlOW00dXM2OTBQakFyczJzSGIyVDRoZmg3dng4Vi1oQ1Z6eVh5S0VPSFRXOE5LTHNxdHVzR1hJZXFPQ1YyNExidWhIMEpac3V1VUpUaWlGTUh5Q2IwclVQUXY4QnJ2c0FERG5mT0ZMOXNTUnVzSVR5Wm9tTjlrWFYwSTVETUhuMUttVHlPSHh3b2NBbzRkVmpRLU9mUHBxRmtZVTRQUjJoX0hNM3lTYWZuUlpMVy05aHZsUGRjZXJjZm1RTlFTYlB5OXdzT3Fpa2hXNHlWV1dTT3pVQlJSeEQ5SjJzZFVvYzdIS19VakUzaXVyR1FkMnhTUHVLTC1aWmJXam1YSGdGNmhHOUktam5iTnV6bERCczdJWGFxdVJCeEJ1ai1zZjZvN3R1SUdKU0h3QXBOV2xVU05wWW1HdnlpVXpNNnNoXzVMc2lSREtFcDBCZXJMNU05MFE3SHhmZlVGdEJGZFNzeXRBVE1IcDZsRkZvMUVSdG1JWEdZSmNQS2VPOUs3U1ppSFpDU1BXNF9qa0NPYmFOeEFERUpNTEs4dlRVRWpQazB6N0p3OHRhcHhweUx0ZExUWGJjZ0Njc1BaaHowZ0wtSXY2c3pNQzYwWk40bGQzaTVwSnVoUDByZnFpVGVwVGxpZnNSYlQxSTVfaENCSDVQY2ZyemU5VXVHZVVNYzNyU1RudnNGVWtkN0lxbHAzTE1BcEM2emp2RTVhai12MXM5dnItT19BdG1sdVJpLWVoLU02WGhmUUY3VGR6eVd1TV9PVWg0RUFaYTN5YzNxVFdpX2w0cmNvNWwwRk5CUGFvWGozZTA2WDBfT2IwSVRjR0ZyZUc3YkdlcTZLUnZacVJIMklwRkJnS1RUVTFtY01UcFB1VGhQZm1MZzN0a3h2T043dnV5NThVVF9hZDY4VG9CZE9xeUpKdXBlVVd0R1pRbUZ6a0lTT2prTWFTUnU2dWxfcnhoc281eVVsYUUxcW5ydDdLT2pnZE0xMzJUTV8wTHNqNFZhV01peXZsZDdGVFozZ3J2UEpfYnd3aWhMZ3hhN21IQVdqelJfTnA3REE0Y04xc0IzRWVqSzRSWDlONklIMnROTEhfVU9yWktUYmpQdzFPTDN0Wk5VN1lQVVBxWkhYWFpSVXVVS2lIN2xSdks2M2dMSS1McHlCZ2tzWWpTVkNWVUpBOXRySkZTb3cwYXNIdHFZS0U0TURmTHpzaEhBODJUUGIwR3owaFhmR0V2d2FkUkFFdDNWR3ZFMlFIdkwzZ3IybGM3MEQwTWRSSnJJT3l2dTMta2xzSVJoZXFVTzhUYTZHcnppVG5vSmhYaV9TSUJRRVpaeFhtcUdJa1VPaFdTTmhMZmlCZGhESEJQZGFFT2lFU09pUzJmbEg0T0ttRGE0dzZ3b1NYMXZNTWJJMDVIdUJFQ2RvUXRSYmFsaUVxMWQwUWpqeWw0Rmp1QUV2UkJQcGh6RmJscEtrdUZSSVRwNTZsNlBWanZKVU5lV0dxVzBQT05FT1N4YlpBNExPTmt0MjlWMHlNRjlXelJ4YV9DanNGMktBSHJ6RUd4WWRSd3FMR3RfVHpzOHZZcnRxaHZjU2xycWpzbE40OU9KUEpnUjQ2NDBhMFlpdTFzenVGUzNnNy1iRmVnV2VfWWNoYkU2U20tdXdSeE1oTlZlR3BJckQ2MmZoWG1pdkVpMzBNWUpfaW9CSEVTUUFmZWFBc1FCbEVITG9qbXo4NHpzMmVVQTFTSGQ4Yktmc25CYkdEelBDT0NGV0pWYUlLM2wyOGJDb3dWSmpWVEN4UG5Wc0tXZ19USjVfVldweDlNUTFETnJNQlkySG1xT1h5c0NELVFnX0lEaG9JeGxVcnozVXlreHJpQmhEMW9DUG5NZUtYd2VSY0Q4aXU0cEpBc2d2VzNZYlBPWG9zVkdmdklPdTFZZjJ0UVFneV9lVGo4dVd0OUh6WEh6NzR6NWMzTVVnTzRiYkdDUzltM1lHWEZCVkVuNnk2MEF6ektoTUYyMW5IYl92a2F6bHlrWEZKaHRNSW1EZnFNb21vOE1oemZCcEcwTVRhclZuVE80Tlg0NkpkMmowbWZSWFlmVmQtaVItd1p0ZzF5WWlTbFJ2UnpHZlJQU2Y2X01CTzRZUTJTN0t3WmtDcW5jdnBnTUZ5R2ItMGctR0xvSVVLbS03NHZTYndqNVdLUWNTbTN6RjFYbkd2MUMweXZPYjc2QWxWU081RFVCa1Z1c0M4VWV5RW05OHZpQkgxaXhXbEY0Vl9HZGJWVERnYk5HRW5FNWVscXN5dFNDZzlYeFktZ0JsZVRGQVNheExKb2RLZnZNYW9FMUtFMGh2eHAyaFpOR0ktcU1ETjB1X2sxckxzTmx2eDJLY2tfSzg4ZzJJOElKS0NTNC1hZEFxcmdpY3BKOUJXQk1vQkpiMmR2MFRJNTRUM3FOakxZNWlEM2lxeVlfajBGY3VOQVdiTUZyQ0xuZXFXVG45cUlMZ29uN19haEJCZDRwNjlHcWJVV2lLbjY1SV9aSklPY0psQko4bmFzek9vbTJNYUtwR2xlTjAyVktiaWhvNk82YURVNk5JTkV4Qm5MYVVJb1BmSmlOdDhGM2JfWUludWV2cFNzZy05UGtsSHh3SkVZNEc1WVBwN3VUTEFoWEhBOENVVWppTkdpRGtETGFpWENyMTZTb2RfYnpfQUw5YUhZMWdQZGMtWkhlTGtrRS1EUmVzcEN1N043emNuMkE0M0hBV2k3TFpVLTJwVElPUlBfNFU0SFBhWU5mNzllbkhnQ3kxVDhfMW4wSFBXcUEyTkd4VjlEYkxPMS1kRDE3NHctbDVydUhPbEtBR0pVN0VXNzdienhNN2hkT1VFWW1NLXRsT1VySF9JZ05lNGpnQmhJU3Z1SlRIQnlmUzBLRlpsQ1RtdTNveFFGMUJ5b0tvY0FvNDZyTmpmS2lPbzRvRnFhZHJwb1Q5T2Y0T1B2SnB1Nm84NUVqendRZkNHakN5RHJEaGttc3ktLTVWSFJfS3NQY2N3WU5ESnoweGxXTXhQMW5TdFowQTdVNEx3bnJ5ZmpjRWh3V25MRXZWMV9iRmFGQzZKMGdNbnhQYzJhYkxVR1g3WmZhbDNTMjBoX2ZmSjJOY19Db0dHTmRPc09CbWhlZFVTLWZUa1NRZkFfQkdKN3piOVhDWkhYWkcyYnhUM1VoVDJIemtOeGNRdWJqQUtBSk1CdG1Mbk1EYnNHanNxcy02WmlGZnFEaVk1b1JHQVowMDBDN3h3TUJkLTFDU2IxbGU2SFpONmtKUGM3aGg2cFhFYklnTTdLamZZVFg5NE9jM25GTkMxN3dGR1A2Tzh5dl85U2ttUmFmaVdJM2JHR2Z6Q0h6cjdnb2tDdU1OT0hGR3RCNGJGVHVGSDdCS1FJMjRad1JmYzhoYndhUGpMbkFIVkJidXktMmdveVRzWmVxNWxrS0lnLVd0UzVTbDMzMHNnZmlBa0VhUW0xc3BxR095SV8wWk8tbWlMUmducEpRSkVhYVhOMkVnQjZObjdKWFNPVWlMQ3hMTjhNalV6anREaDh2UndnbGFabFBLX3M4ckVFaEw0eF9wWmZnMkpsQllzTzVYTy1nR1JxdE1NWVhmaktLM3BMX2p6T2l5b2s4a3VpYTVWNnNVREltZ1ZGU3NQLUd4UGxpeWNCOWEzeEt1Q3dYRzRQVHpaaS1HZXZXM2NMak1GT0UzcXJOUUotYTRPZ0VuWmFBLUJBbS15czdkRlZIN0p4Z1JEZk4xTlNqNUdRbjhoSVprX2ZEandSRkRmLW56TjJ0TmU0NEg0Ymc0Q1F1ZjZNeVpHelBpVjJDZml5aXpYaE56Q2psQ0lqTk5JQXJrXzBsTktZeU50WlFDVzdIUHZUMTBZRng2YV93UVIwa2k1RmhmZDhkcTdVNG9OM2J2SHptM0tNTXJkbHd0X2NDQ2JwRUN0V2hsTjZNS2lFc3k1SkdKeDF1bGhnZWVSY3ZiQ09DS1BBOFFSajc3aXBJcEFVQlZaRUNTWGRIck5Pb041czFRcU5YVXFDdGh0anFvMDFhLWdvcWJZemp0VVNjUTlXRDdWci1fdXF6Xy02elNjY0VvUW1pVEhrWC1BWkV4aGVTRzJXNmotVFNIZG5od3ZKZ2JtOGUxTTU0MGJyUGZfUXFnRWdCYkVsa0g2T1JzNEFwSXBVd1h1ZnpNMTVMYll6dm1KT21EdFdfMmU5WHpxc0Zicm03N25xSElTOGVORDJUNjBKOXFHWThCbDZGWUdvUW5GVXpCWTBPbjZ2dXVqWGFSR3hibDNzUzRrMjN5and4QWhUSG1pT0JURkdiN1U1WVUxVjZoSjhFRERUZmhJa2ttLWlWd1JPNTl5d3RVMUJxRElpTnNWMWNlYjZndWk0b3Q0V2tvb3R3YU95ajY0ZjhqeEhOWHVZVDRaNHQ0WDN6cmxqRDU1ME1manZtZE5UVUl0bUV2bWUzWWxPbWlGQzFpNThCaXdBb01nX19HV24wYnlLYmpmaFlObkxmSkZuRDJZZVBKUXF2SVBkdEJKeGd6dDVQeHlrWWRiQ1FDZWlzZ1l1RXZuWEkxOVJCS1RTT05GX25lRVZ2ZlFDTEQ5Q2F1QndFbWlJWjRZM0Z6Ulh3VmpJbFZEamRuLTVVaG9ibHh3TEhsVWVJQUZSRGx5bV9jM1pyb0d3QzdaTWNLdHNQYkk0bkFaVzN1QWYxMG5TNks3dUNWb2JOb0F5aWcxd1FGejBCQ0RlZEtpazEzbWVaaEZ0aFEzenREUE4tUHRrV2drMC1GWnByVllUZ3ZZbzNRcDlqVUVNeEVCZzhqbHMzVHRKTDhXd3lkaTRxMVZHYW55M1pyZVpTRDA4djVPb3dRNEFCYWMyTVFJMDJvSzhMWG5DRGtZbVVXcDc4b2hnTFh5cTFJNVVFUEZiazdZTWNXeG4ySDEybWVMUk96WXB2YmtVc0Q2aHFYVWlsZTZuRG9SMWpnNHZpZ19XR2h1QXhfclhBV3d3NUh6eHFkNHFPMWNtcVlnMFhBRUJacllSSWV4Qm5rajh5amN2X0J0ZFlmbC1nV0lWSmQ4NUZXUkhCZ1ZZc08xSnIybGtIVlhoM09MWXdfLVhnRWNnX1BBbVh4UGxET044VEktZjRwcHFvRXE5c3hwbHNkdjhYRHJuRElMZThYUEVxYVJUSUhMQzNpMlhGUG1hbVZ4ZmJOVS1nYUFHWUtKLVE3RGlsR3hybDg4ZmpKMW1qZmxYRGhKVG9hTjNIb0lRNm5LR2dORUJEX2JKYmdBQ2EzSHNCOHRMb3QzcWlKMGNOTG9kZEFlTENBX2NBX2dSdUdpS0doclM5LU1UOGJsNlB5VkZBS1djeWc1MWxYa3pOSGZNLVFzcWtGQ2M2cVZpQTJHX1FwTjdqYURITU1TYUlSZlhWR0lqNVE1OWd2MGN5RkV3R2JOY2IxdHA2UjlyZEFjallEc2dySEE2aU52alVVdHl1NDh2cG9jMW1PMW5WWkNYLVdwdy1qelFzWExxV3oyY1dRYXpQRzJaZGwzMGtmTnM3dmJjeUlBMkJ4Mlh3aDJxWUxtVnFNQUp6YVdOQ0VpSS0yT1dVZDNNV2dKNWh2RF9GN0h3WFA1LVhqRmRSSXBZYm1DQnlObHYzT01PUDk3LU1meXJ3cnZvM1E4OGpPcmdNWkpGRHhRb0RpbGVLMmh5cVpRUEVXVmJ1SzdfR083cnZMc0lzZTZiNUJsN0F6anQySGp3QVVoRzE4SGU1d3QyRTBrc01wZko3blRMUHNVcnhNSjViU0pYYVhsN2Fzc3JYdjNPNjFmd19GMXZWSTBuNFRZa3RTYVlnNXhERHZFcElNMnBuNnZWY1NDRlJiLU9uRGRxRnZ5WGZmVlZSZ21DVnlxdW1iWUtHS0U5cFB5RVVHZXR6bGtxeXZRdVVTZ3k0dmNDYWFzNV9HTWVnU2tOSHEwQWdTS09NMlZWSUhUOEU4al8zUVc1a1daUDRSckFaM1FZVWJ5cEx4R0FBNW14SlA5MUpKU3ZJNHdiT191bVlkQmtDQVBmM29peVJPMUMtNlo3dkJoU0FFMXZlU1Q3SURaRVFPdDJ2RWVtS0l1c052T1hmeUloUnRQanQ0VlFQeEpqZkZGdl9WcXZIeFp1ZFBRS1FfZW9MbmtHYmNsV3VjaHg0dFhuZHZxdnFGX0YtMWpzZzNNLWVhTGM4MWhiVlNjSF9PVjdrODBsRnQ0dUdhRXl2cVJQb3VCT2tYcjZTMDE2bE5GUnhFdUZxM0FWeHhCMm9lZFpvbDNYd0NqbTA1ZFZLMG9FU2YydllPTVNURHN3eXppRXNlT3RIMDBnVVo3ampha3Nzamx0ZjEycy1Dd0pKM2ZzVGxlaTNyYTlHNFNCLVlKV3MtdlQzOEVyMm8wNDVmdm5qMGdabUFIXzZhaDRvWE5rT09jREtqZ0x1N19rY2djRU91bmprUDBTdENQbVYweEhwYzA2WURiNEtWMm1YdmZHNmpZTWZMRklnMi1jYTRPLWF2OVBrbWd4LXpPdFZvS0hENkJteDhibWtKQm0tNzdMOUxtS25zWnpwTmFKQ1ZPbG5mdUl1WFVhMHZ4V2hyc1k1ZlZXcU95RXMwbVN2aGZ0aDJuN2x2azBScFQxNFplZnJiQ2NNTFVEQVFERkVFekYuMWVlZUdrM3p6S0NISGVLZHBUTlMyQUpEbHJSenMwY3lNSXZKTkJ4Nm12b0NPZGo2Q0dUck1fNncxal91bzMyQVFfU0JwOEF5bUNuR0wyQnpPTHJ1S2c="/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/></section>
+               
+                                   <button
+                               class="bouton"
+                               name="submitBtn"
+                               accesskey="l"
+                               type="submit">
+                           <span class="mdc-button__label">Soumettre le formulaire</span>
+                       </button>
+                        <style>
+                            .tdbcol {
+                                float: left;
+                                width: 50%
+                            }
+
+                            @media screen and (max-width : 960px) {
+                                .tdbcol {
+                                    width: 100%;
+                                    padding: 5px
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+
+
+
+                <div class="clear"> </div>
+            </div>
+        </div>
+        <style type="text/css">
+            #deroulant_203 .bouton_deroulant {
+                width: 100%;
+                float: left;
+                display: none;
+            }
+
+            #deroulant_203 .bouton_deroulant.show_bouton_deroulant {
+                width: 100%;
+                float: left;
+                display: block;
+            }
+
+            #deroulant_203 .bouton_deroulant .partage,
+            #deroulant_203 .bouton_deroulant .print2 {
+                display: block;
+                text-align: center;
+            }
+
+            #deroulant_203 .bouton_deroulant .btn_partage {
+                display: none;
+                margin: 0;
+            }
+
+            #deroulant_203 .bouton_deroulant .btn_partage.show {
+                display: inline-block;
+                background: #FF5522;
+                width: 100%;
+                vertical-align: top;
+                margin-bottom: 00px;
+            }
+
+            #deroulant_203 .bouton_deroulant .btn_partage a {
+                width: 160px;
+                height: 120px;
+                float: left;
+                margin-right: 20px;
+                text-align: center;
+                color: #000;
+            }
+
+            #deroulant_406 .bouton_deroulant {
+                width: 100%;
+                float: left;
+                display: none;
+            }
+
+            #deroulant_406 .bouton_deroulant.show_bouton_deroulant {
+                width: 100%;
+                float: left;
+                display: block;
+            }
+
+            #deroulant_406 .bouton_deroulant .partage,
+            #deroulant_406 .bouton_deroulant .print2 {
+                display: block;
+                text-align: center;
+            }
+
+            #deroulant_406 .bouton_deroulant .btn_partage {
+                display: none;
+                margin: 0;
+            }
+
+            #deroulant_406 .bouton_deroulant .btn_partage.show {
+                display: inline-block;
+                background: #FF5522;
+                width: 100%;
+                vertical-align: top;
+                margin-bottom: 00px;
+            }
+
+            #deroulant_406 .bouton_deroulant .btn_partage a {
+                width: 160px;
+                height: 120px;
+                float: left;
+                margin-right: 20px;
+                text-align: center;
+                color: #000;
+            }
+
+            #deroulant_250 .bouton_deroulant {
+                width: 100%;
+                float: left;
+                display: none;
+            }
+
+            #deroulant_250 .bouton_deroulant.show_bouton_deroulant {
+                width: 100%;
+                float: left;
+                display: block;
+            }
+
+            #deroulant_250 .bouton_deroulant .partage,
+            #deroulant_250 .bouton_deroulant .print2 {
+                display: block;
+                text-align: center;
+            }
+
+            #deroulant_250 .bouton_deroulant .btn_partage {
+                display: none;
+                margin: 0;
+            }
+
+            #deroulant_250 .bouton_deroulant .btn_partage.show {
+                display: inline-block;
+                background: #FF5522;
+                width: 100%;
+                vertical-align: top;
+                margin-bottom: 00px;
+            }
+
+            #deroulant_250 .bouton_deroulant .btn_partage a {
+                width: 160px;
+                height: 120px;
+                float: left;
+                margin-right: 20px;
+                text-align: center;
+                color: #000;
+            }
+
+            #deroulant .bouton_deroulant {
+                width: auto;
+            }
+
+            .mes_outils [class^=picto] {
+                min-width: 85px;
+                float: left;
+                margin-right: 0.5%;
+            }
+
+            .deletIco {
+                position: relative;
+                left: 24px;
+                top: 3px;
+                visibility: hidden;
+            }
+
+            .curseurMain {
+                cursor: pointer;
+            }
+
+            #pluginbomenu {
+                float: left;
+                width: 100%;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .mes_outils .outils_picto {
+                padding-top: 15px;
+                padding-bottom: 28px;
+            }
+
+            .outils_picto {
+                padding-right: 20px;
+                padding-left: 20px;
+                margin: auto;
+                height: 140px;
+            }
+
+            .ui-placeholder {
+                margin-left: 6px;
+                margin-bottom: 6px;
+                padding-left: 15px;
+                min-height: 105px;
+                width: 90px;
+                border: 1px dashed grey;
+                -moz-border-radius: 7px;
+                -webkit-border-radius: 7px;
+                border-radius: 7px;
+            }
+
+            .ui-placeholder:hover {
+                background-color: #E8E9E9;
+            }
+
+            .ui-placeholder:active {
+                background-color: #CED1D1;
+            }
+
+            .mes_outils [class^=picto]:first-child {
+                padding: 0 12px;
+            }
+
+            .outils .outils_btn {
+                padding: 15px 10px 10px 10px;
+            }
+
+
+
+
+            .active_btn {
+                background-color: #fff
+            }
+
+            .vc_text_separator.full {
+                position: relative;
+                box-sizing: border-box;
+                border-bottom: 0;
+                text-align: left
+            }
+
+            .separator_line {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                padding: 0;
+                display: block;
+                background-color: #a6a6a6;
+                z-index: 1;
+            }
+
+            .separator_wrapper {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                top: 0;
+                padding: 0 0px;
+                background-color: #f4f4f4;
+                border: 0;
+                z-index: 2;
+            }
+
+            .tousmesoutils_appli:hover {
+                background-color: #FF5522;
+                color: #fff;
+                border: 2px solid #fff;
+            }
+
+            .bouton_deroulant:hover .montest2:before {
+                display: none;
+            }
+
+            .enq:hover .fa-question {
+                display: none;
+            }
+
+            .enq span {
+                overflow: hidden;
+                word-wrap: break-word;
+                /*width: 140px;*/
+                max-height: 34px;
+                float: left;
+                text-overflow: ellipsis;
+                text-align: center;
+            }
+
+            .enq:hover {
+                width: 305px !important;
+            }
+
+            .enq:hover span {
+                /*min-width: 140px;*/
+                width: 100% !important;
+                max-height: 34px;
+                float: left;
+
+                overflow: visible;
+            }
+
+
+
+            .vc_text_separator.full .separator_content {
+                font-size: 1.5em;
+                line-height: 30px;
+                color: #3e3e3e;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-align: left;
+                text-transform: uppercase;
+                padding: 10px 20px;
+            }
+
+            @media only screen and (max-width: 961px) {
+                #pluginbomenu {
+                    width: 100%;
+                    float: left;
+                    margin-top: 160px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
+                .outils .outils_btn {
+                    border-left: 0px;
+                    border-top: 1px solid #b4b3b3;
+                    */ width: 100%;
+                    padding: 15px 10px 10px 10px;
+                    margin-top: 2%;
+                }
+
+                .bloc2 {
+                    margin-left: 0;
+                }
+
+                .bloc1 {
+                    margin-right: 1px;
+                    margin-bottom: 0px;
+                }
+
+                #outils_picto {
+                    padding-right: 0px;
+                    padding-left: 0px;
+                    width: 100%;
+                    height: 260px;
+                }
+
+                .mes_outils [class^=picto] {
+                    margin-right: 3%;
+                }
+            }
+
+            @media only screen and (max-width: 770px) {
+                #pluginbomenu {
+                    margin-top: 15px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
+                .mes_outils [class^=picto] {
+                    margin-right: 0;
+                }
+
+                /*.tousmesoutils_appli {
+		    width: 140px;
+		    height: 110px;
+		}*/
+            }
+        </style>
+        <script type="text/javascript">
+            /* flag onclick drag & drop */
+            var propagation = 1;
+            /* flag maj pos */
+            var update_flag = 0;
+            /* Text Balise span BTN activation modification */
+            var span = document.getElementById("id_span");
+            /* btn appele fonction dragUnlock et dragLock*/
+            var btnonclick = document.getElementById("btndragdrop");
+            /* selection de tout les outils */
+            var cols = document.querySelectorAll('.picto');
+            /* init span*/
+            span.innerHTML = " Organiser ses favoris";
+            /* id du btn ajouter */
+            var id_btn_add = 0;
+
+            //document.getElementById("locker").classList.add('fas fa-lock');
+            //document.getElementById("btndragdrop").classList.add('fa-lock');
+            $('#locker').addClass('fal fa-lock');
+            /* Cacher BTN se deconnecter en nyroModal */
+            $(".nyroModal").click(function () {
+                document.getElementById('boutonconnexion').style.visibility = 'hidden';
+            });
+
+            /* rendre visible le btn deconnexion */
+            $(".nyroModalBg").click(function () {
+                document.getElementById('boutonconnexion').style.visibility = 'visible';
+            });
+
+            $('.outils_picto, .container>.picto').sortable({
+                "containment": '.outils_picto',
+                "opacity": '0.5',
+                start: function (event, ui) {
+                    update_flag = 1;
+                    event.stopPropagation();
+                    event.isPropagationStopped();
+                },
+                stop: function (event, ui) {
+                    event.stopPropagation();
+                    event.isPropagationStopped();
+                }
+            });
+            $('.outils_picto, .container>.picto').sortable("disable");
+            $('.outils_picto, .container>.picto').disableSelection();
+
+
+            var span_length = document.querySelectorAll('.enqu span');
+            var span_length_enq = document.querySelectorAll('.enqu');
+            for (var d = 0; d < span_length.length; d++) {
+                if (span_length[d].innerHTML.length > 24) {
+                    span_length_enq[d].classList.add('enq');
+                }
+
+            }
+
+            function isOverflown(element) {
+                return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+            }
+
+            function dragUnLock() {
+                update_flag = 0;
+                propagation = 0;
+                /* on cache le btn delet */
+                var deletIco = document.querySelectorAll('.deletIco');
+                /* value du btn orange */
+                span.innerHTML = ' Modification en cours ...';
+                /* changement de la fonction on click BTN orange */
+                btnonclick.setAttribute('onclick', 'dragLock()');
+                /* changement dynamique icone  lock */
+                //document.getElementById("btndragdrop").classList.remove('fa-lock-open');
+                //document.getElementById("btndragdrop").classList.add('fa-lock');
+                $('#locker').removeClass('fal fa-lock').addClass('fal fa-lock-open');
+                /* Afficher icone DELET */
+                for (var j = 0; j < deletIco.length; j++) {
+                    deletIco[j].style.visibility = 'visible';
+                }
+                /* Permet le drag and drop */
+                for (var i = 0; i < cols.length; i++) {
+                    var drag = document.querySelectorAll('.picto');
+                    drag[i].setAttribute('draggable', 'true');
+                }
+                $('.outils_picto, .container>.picto').sortable("enable");
+                $('.picto').toggleClass('ui-placeholder');
+            }
+
+            function dragLock() {
+                propagation = 1;
+                /* selection des btn delet*/
+                var deletIco = document.querySelectorAll('.deletIco');
+                /* Changement du text btn orange*/
+                span.innerHTML = ' Organiser ses favoris';
+                /* changement de fonction btn orange */
+                btnonclick.setAttribute('onclick', 'dragUnLock()');
+                /* changement dynamique icone  lock */
+                //document.getElementById("btndragdrop").classList.remove('fa-lock');
+                //document.getElementById("btndragdrop").classList.add('fa-lock-open');
+                $('#locker').removeClass('fal fa-lock-open').addClass('fal fa-lock');
+                $('.outils_picto, .container>.picto').sortable("disable");
+                /* Cache le btn delet */
+                for (var j = 0; j < deletIco.length; j++) {
+                    deletIco[j].style.visibility = 'hidden';
+                }
+
+                /* ne permet plus le drag an drop des elements et MAJ des positions*/
+                for (var i = 0; i < cols.length; i++) {
+                    var drag = document.querySelectorAll('.picto');
+                    drag[i].setAttribute('draggable', 'false');
+                    if (update_flag == 1) {
+                        update_position($(drag[i]).attr('uid'), $(drag[i]).attr('id_appli'), $(drag[i]).attr('id_outil'), $(drag[i]).attr('id_plugin'), i);
+                    }
+                }
+                $('.picto').toggleClass('ui-placeholder');
+            }
+
+            function update_position(uid, id_appli, id_outil, id_plugin, position) {
+
+                $.ajax({
+                    method: "POST",
+                    url: "template/modules_accueil/mes_outils/update_position_favoris.php",
+                    data: {
+                        username: uid,
+                        id_appli: id_appli,
+                        id_outil: id_outil,
+                        id_plugin: id_plugin,
+                        ordre: position
+                    },
+                });
+            }
+
+            function suppression(uid, id_appli, id_outil, id_plugin) {
+
+                $.ajax({
+                    method: "POST",
+                    url: "template/modules_accueil/mes_outils/suppression_favoris.php",
+                    data: {
+                        username: uid,
+                        id_appli: id_appli,
+                        id_outil: id_outil,
+                        id_plugin: id_plugin
+                    },
+                });
+                var id_element_delet = uid.concat(id_appli).concat(id_outil).concat(id_plugin);
+                document.getElementById(id_element_delet).style.display = 'none';
+                creationBtnAjouter();
+            }
+
+            function onClickLiens(link, targetBlank) {
+                if (propagation == 1) {
+                    if (targetBlank = 1) {
+                        window.open(link);
+                    } else {
+                        document.location.href = link;
+                    }
+
+                }
+            }
+
+            function creationBtnAjouter() {
+                id_btn_add++;
+
+                var ajouter = document.createElement('a');
+                ajouter.id = id_btn_add;
+                ajouter.href = 'template/modules_accueil/mes_outils/ajouter_favoris.php';
+                ajouter.className = 'picto nyroModal ui-placeholder';
+                ajouter.style = 'padding-top: 25px; padding-bottom: 25px;';
+                ajouter.oncontextmenu = 'return false';
+
+                var ajouterPicto = document.createElement('i');
+                ajouterPicto.className = 'fal fa-plus-square fa-3x curseurMain';
+
+                document.getElementById("outils_picto").appendChild(ajouter);
+                document.getElementById(id_btn_add).appendChild(ajouterPicto);
+
+                $(function () {
+                    $('.nyroModal').nyroModal();
+                });
+            }
+
+        </script>
+        <script>
+            $("#progress-bar").onscroll({
+                backgroundColor: "#FF5522",
+                height: '5px',
+                position: 'fixed'
+            });
+        </script>
+
+
+
+        <footer role="footer">
+            <div class="top_footer">
+                <div class="container">
+                    <div class="grid">
+                        <div class="grid1-2">
+                            <div class="social_footer">
+                                <div class="title">Suivre l'Universit&agrave; di Corsica</div>
+                                <a href="https://www.facebook.com/univcorse" target="_blank" class="facebook"
+                                    title="Facebook"><span class="visually-hidden">Acc&eacute;der &agrave; notre page
+                                        Facebook</span></a>
+                                <a href="https://twitter.com/univcorse" target="_blank" class="twitter"
+                                    title="Twitter"><span class="visually-hidden">Acc&eacute;der &agrave; notre compte
+                                        Twitter</span></a>
+                                <a href="https://www.instagram.com/univcorse/" target="_blank" class="instagram"
+                                    title="Instagram"><span class="visually-hidden">Acc&eacute;der &agrave; notre compte
+                                        Instagram</span></a>
+                                <a href="https://www.linkedin.com/edu/school?id=12495" target="_blank" class="linkedin"
+                                    title="LinkedIn"><span class="visually-hidden">Acc&eacute;der &agrave; notre page
+                                        LinkedIn</span></a>
+                                <br>
+                                <a href="https://www.youtube.com/c/univcorse" target="_blank" class="youtube"
+                                    title="YouTube"><span class="visually-hidden">Acc&eacute;der &agrave; notre compte
+                                        YouTube</span></a>
+                                <a href="http://www.franceculture.fr/conferences/corse-pasquale-paoli" target="_blank"
+                                    class="france"
+                                    title="Retrouvez une s&eacute;lection de cours et de conf&eacute;rences sur France Culture Conf&eacute;rences, accessible depuis www.franceculture.fr"><span
+                                        class="visually-hidden">Acc&eacute;der &agrave; notre page France culture
+                                        conf&eacute;rences</span></a>
+                                <a href="https://www.universita.corsica/appli" target="_blank" class="mobile"
+                                    title="Appli"><span class="visually-hidden">Acc&eacute;der &agrave; notre
+                                        appli</span></a>
+                                <a href="https://www.universita.corsica/fr/flux-rss" target="_blank" class="rss"
+                                    title="Flux RSS"><span class="visually-hidden">Acc&eacute;der aux flux
+                                        RSS</span></a>
+                                <br /><br />
+                                <div class="title">La boutique de l'Universit&agrave;</div>
+                                <a class="boutiquefooter" href="https://shop.universita.corsica" target="_blank"
+                                    title="Aller sur la boutique de l'Universit&eacute; de Corse">A
+                                    butteguccia</a><br />
+                            </div>
+                            <div>
+                                <div class="title">&Agrave; la Une sur nos sites web</div>
+                                <div class="grid">
+                                    <div class="grid2">
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <span class="titlerss">www.universita.corsica</span>
+                                                    <p>
+                                                        <a
+                                                            href="https://actu.universita.corsica/plugins/actu/actu-front.php?id_site=institutionnel&amp;id=10261">Orientation
+                                                            : rencontrez les enseignants de l'Università di Corsica </a>
+                                                    </p>
+
+                                                </li>
+                                                <li>
+                                                    <span class="titlerss">Etudiants &amp; futurs
+                                                        &eacute;tudiants</span>
+                                                    <p> <a
+                                                            href="https://studia.universita.corsica/plugins/actu/actu-front.php?id_site=1&amp;id=10447">Parution
+                                                            du 2e numéro du magazine Cù Scenza</a></p>
+
+                                                </li>
+                                                <li>
+                                                    <span class="titlerss">Recherche</span>
+                                                    <p> <a
+                                                            href="https://ricerca.universita.corsica/plugins/actu/actu-front.php?id_site=3&amp;id=10447">Parution
+                                                            du 2e numéro du magazine Cù Scenza</a></p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>
+                                                    <span class="titlerss">Partenaires professionnels</span>
+                                                    <p> <a
+                                                            href="https://pro.universita.corsica/plugins/actu/actu-front.php?id_site=4&amp;id=10343">La
+                                                            mer vue des îles - Séminaire transdisciplinaire ICPP</a></p>
+                                                </li>
+                                                <li>
+                                                    <span class="titlerss">Fundazione di l'Universit&agrave;</span>
+                                                    <p> <a
+                                                            href="https://fundazione.universita.corsica/plugins/actu/actu-front.php?id_site=4&amp;id=10433">RIMePOP
+                                                            n°2 - UNE CORSE... POP ? Entretien avec l'artiste ANTO FILS
+                                                            DE POP</a></p>
+                                                </li>
+                                            </ul> <a class="actufooter" href="https://actu.universita.corsica"
+                                                target="_blank"
+                                                title="Toutes les actualit&eacute;s de l'Universit&eacute; de Corse">Actus
+                                                et calendrier &eacute;v&egrave;nementiel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom_footer">
+                <div class="container">
+                    <div class="pull-left mentions">
+                        <a href="https://www.universita.corsica/fr/mentions-legales" target="_blank">Cr&eacute;dits
+                            &amp; mentions l&eacute;gales</a>
+                    </div>
+                    <div class="pull-right">
+                        <a href="https://www.universita.corsica/fr/contacts" target="_blank">Contacts</a>
+                        <a href="https://www.universita.corsica/fr/universita/plan-des-campus/" target="_blank">Plan
+                            d'acc&egrave;s</a>
+                        <a href="https://www.universita.corsica/fr/presse" target="_blank">Espace presse</a>
+                        <a href="https://phototheque.universita.corsica/" target="_blank">Phototh&egrave;que</a>
+                        <a href="https://www.universita.corsica/fr/recrutement" target="_blank">Recrutement</a>
+                        <a href="https://pro.universita.corsica/plugins/marches_publics/marches_publics-front.php?acces=ok&id_art=469&id_rub=0&id_site=4&id_menu=53&header_plugin=ok"
+                            target="_blank">March&eacute;s publics</a>
+                        <!--<a href="">Plan du site</a>-->
+                        <a href="https://www.universita.corsica/fr/accessibilite/" target="_blank">Accessibilité</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <a href="https://portailweb.universita.corsica/plugins/auth/logout.php?username=braaac21&id_site=0">
+                <div id="boutonconnexion"><i class="fa fa-sign-out fa-1x"></i>&nbsp;&nbsp;Se déconnecter</div>
+            </a>
+
+
+
+        </footer>
+</body>
+
+<link rel="stylesheet" type="text/css"
+    href="https://portailweb.universita.corsica/template/template_back_office/css/google-fonts.css" />
+<link rel="stylesheet" type="text/css"
+    href="https://portailweb.universita.corsica/template/template_back_office/css/animate.css" media="screen" />
+<link rel="stylesheet" type="text/css"
+    href="https://portailweb.universita.corsica/template/template_back_office/css/flexslider.css" media="screen" />
+<link rel="stylesheet" href="https://portailweb.universita.corsica/styles/nyroModal.css" type="text/css"
+    media="screen" />
+
+
+
+<script type="text/javascript"
+    src="https://portailweb.universita.corsica/template/template_back_office/js/jquery-migrate-1.4.1.min.js"></script>
+<script type="text/javascript"
+    src="https://portailweb.universita.corsica/template/template_back_office/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript"
+    src="https://portailweb.universita.corsica/template/template_back_office/js/app.js"></script>
+
+
+
+
+
+
+</html>
