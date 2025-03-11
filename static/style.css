@@ -1,3 +1,239 @@
-input #password{
-    margin-bottom: 5%;
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.top_header {
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.pull-left {
+    float: left;
+}
+.menu_top_header {
+    position: relative;
+}
+.menu_top_header a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu_top_header a:hover {
+    text-decoration: underline;
+}
+.nosportails {
+    cursor: pointer;
+}
+#nosportails_menu {
+    display: none;
+}
+.menu_top_header ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    width: 200px;
+    z-index: 1000;
+}
+.menu_top_header ul li {
+    padding: 5px 15px;
+}
+.menu_top_header ul li a {
+    color: #333;
+    display: block;
+}
+.menu_top_header ul li a:hover {
+    color: #ff5522;
+}
+#nosportails_menu:checked + ul {
+    display: block;
+}
+.animated {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+@keyframes slideInDown {
+    from {
+        transform: translate3d(0, -10px, 0);
+        visibility: visible;
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+.slideInDown {
+    animation-name: slideInDown;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.header img {
+    max-width: 100px;
+    height: auto;
+}
+.header h2 {
+    color: #ff5522;
+    font-size: 1.6em;
+    margin-left: 30px;
+}
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-box {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 25px;
+}
+.login-box h2 {
+    color: #ff5522;
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 14px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+.form-group input:focus {
+    outline: none;
+    border-color: #ff5522;
+    box-shadow: 0 0 5px rgba(0, 68, 148, 0.2);
+}
+.btn-submit {
+    background-color: #ff5522;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 600;
+}
+.btn-submit:hover {
+    background-color: #d43100;
+}
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    display: none;
+}
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    margin-top: 30px;
+}
+.help-box {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 25px;
+}
+.help-box h3 {
+    margin-top: 0;
+    color: #ff5522;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+.help-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.help-links li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+.help-links li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ff5522;
+}
+.help-links a {
+    color: #ff5522;
+    text-decoration: none;
+    font-size: 14px;
+}
+.help-links a:hover {
+    text-decoration: underline;
+}
+.hidden_md {
+    display: inline;
+}
+@media (max-width: 768px) {
+    .hidden_md {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .main-container {
+        padding: 10px;
+    }
+    .login-box, .help-box {
+        padding: 15px;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
