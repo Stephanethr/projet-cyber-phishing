@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="https://portailweb.universita.corsica/template/fontawesome/css/all.css"
         media="screen" />
+    <link rel="stylesheet" type="text/css" href="../static/style.css"
     <link rel="shortcut icon"
         href="https://portailweb.universita.corsica/template/template_back_office/images/favicon.ico"
         type="image/x-icon">
@@ -283,20 +284,18 @@
                                                <span class="mdc-notched-outline__notch">
                                                    <!-- <span class="mdc-floating-label"
                                                          th:utext="#{screen.welcome.label.netid}">Username</span> --><span class="mdc-floating-label  mdc-floating-label--float-above"
-                                                         style="background-color:#ffffff"><span class="accesskey">I</span>dentifiant :</span>
+                                                         style="background-color:#ffffff"><span class="accesskey"></span>
                                                </span>
                                                <span class="mdc-notched-outline__trailing"></span>
                                            </span>
                                            <input class="mdc-text-field__input form-control" id="username"
                                                   size="25"
                                                   type="text"
+                                                  placeholder="Identifiant"
                                                   accesskey="i"
                                                   autocapitalize="none"
                                                   spellcheck="false"
                                                   autocomplete="username" required name="username" value=""/><div class="mdc-text-field-helper-line invalid-feedback">
-                                               <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
-                                                   <span id="usernameValidationMessage">Vous devez entrer votre identifiant.</span>
-                                               </div>
                                            </div>
                                        </label>
                
@@ -324,20 +323,18 @@
                                                    <span class="mdc-notched-outline">
                                                        <span class="mdc-notched-outline__leading"></span>
                                                        <span class="mdc-notched-outline__notch">
-                                                           <!-- <span class="mdc-floating-label" th:utext="#{screen.welcome.label.password}">Password</span> --><span class="mdc-floating-label   mdc-floating-label--float-above" style="background-color:#ffffff"><span class="accesskey">M</span>ot de passe :</span>
+                                                           <!-- <span class="mdc-floating-label" th:utext="#{screen.welcome.label.password}">Password</span> --><span class="mdc-floating-label   mdc-floating-label--float-above" style="background-color:#ffffff"><span class="accesskey"></span>
                                                        </span>
                                                        <span class="mdc-notched-outline__trailing"></span>
                                                    </span>
                                                    <input class="mdc-text-field__input form-control pwd"
                                                           type="password"
                                                           id="password"
+                                                          placeholder="Mot de passe"
                                                           size="25"
                                                           required
                                                           accesskey="m"
                                                           autocomplete="off" name="password" value=""/><div class="mdc-text-field-helper-line invalid-feedback">
-                                                       <div class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg" aria-hidden="true">
-                                                           <span id="passwordValidationMessage">Vous devez entrer votre mot de passe.</span>
-                                                       </div>
                                                    </div>
                                                </label>
                                                <button
@@ -345,13 +342,6 @@
                                                    tabindex="-1" type="button">
                                                    <i class="mdi mdi-eye reveal-password-icon fas fa-eye"></i>
                                                   <!-- <span class="visually-hidden">Toggle Password</span>--></button>
-                                           </div>
-                                           
-                                           <div class="mdc-text-field-helper-line caps-warn">
-                                               <div
-                                                   class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg text-danger">
-                                                   <span >La touche Verr. Maj. est activée !</span>
-                                               </div>
                                            </div>
                                        </div>
                                    </section>
@@ -679,7 +669,7 @@
                 .outils .outils_btn {
                     border-left: 0px;
                     border-top: 1px solid #b4b3b3;
-                    */ width: 100%;
+                    /*width: 100%;*/
                     padding: 15px 10px 10px 10px;
                     margin-top: 2%;
                 }
