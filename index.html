@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Formulaire d'Exonération de Parking - Université de Corse</title>
+</head>
+
+<body>
+    <div class="top_header">
+        <div class="container">
+            <div class="pull-left">
+                <div class="menu_top_header">
+                    <span>
+                        <a href="https://www.universita.corsica" class="hidden_md">Università di Corsica</a>
+                        <span
+                            class="hidden_md">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <label for="nosportails_menu" class="nosportails">Nos Portails &nbsp;&nbsp;:</label>
+                    </span>
+                    <input type="checkbox" id="nosportails_menu">
+                    <ul class="animated slideInDown">
+                        <li><a href="https://studia.universita.corsica">Étudiants</a></li>
+                        <li><a href="https://portail.universita.corsica">Personnels</a></li>
+                        <li><a href="https://ricerca.universita.corsica">Recherche</a></li>
+                        <li><a href="https://pro.universita.corsica">Partenaires pro</a></li>
+                        <li><a href="https://fundazione.universita.corsica">Fondation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="header">
+            <img src="./assets/univ.png" alt="Logo Université de Corse">
+            <h2>Formulaire d'Exonération de Parking | Campus numérique</h2>
+        </div>
+
+        <div class="box-container">
+            <div class="login-box">
+                <h2>Formulaire d'Exonération de Parking</h2>
+
+                <form id="login-form" action="warning.html" method="get">
+                    <div class="form-group">
+                        <label for="status">Statut :</label>
+                        <select id="status" name="status" required>
+                            <option value="">Sélectionnez votre statut</option>
+                            <option value="etudiant">Étudiant</option>
+                            <option value="personnel">Personnel de l'Université</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="etudiant-section" style="display: none;">
+                        <label for="username">Numéro étudiant :</label>
+                        <input type="text" id="username" name="username" placeholder="Entrez votre numéro étudiant"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">SOUMETTRE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Université de Corse Pasquale Paoli - Direction des Systèmes d'Information</p>
+            <p>Pour tout problème technique, contacter le support informatique</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('status').addEventListener('change', function () {
+            var etudiantSection = document.getElementById('etudiant-section');
+            if (this.value === 'etudiant') {
+                etudiantSection.style.display = 'block';
+            } else {
+                etudiantSection.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>
